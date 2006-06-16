@@ -1,0 +1,131 @@
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' gamazons-0.83-orig/CYGWIN-PATCHES/README gamazons-0.83/CYGWIN-PATCHES/README
+--- gamazons-0.83-orig/CYGWIN-PATCHES/README	1969-12-31 18:00:00.000000000 -0600
++++ gamazons-0.83/CYGWIN-PATCHES/README	2006-01-17 16:56:51.177750000 -0600
+@@ -0,0 +1,107 @@
++gamazons
++------------------------------------------
++Amazons is a game played on a 10x10 chess board. Each side has four
++pieces (amazons) that move like chess queens (in a straight line in any
++direction). Instead of capturing pieces like in chess, the game is
++determined based on who moves last.
++
++Each move consists of two parts. First an amazon moves to a new square
++and then fires an arrow to another square (the arrow is fired in a
++straight line in any direction from the square the amazon landed on).
++The square the arrow lands on becomes a permenant block for the rest of
++the game. No one can move over it, or fire an arrow over it. Every turn
++an amazon must move and fire an arrow, so every turn there is one less
++square available on the board. Try and block in your opponent or section
++off a good chunk of the board for yourself. 
++
++Runtime requirements:
++  cygwin-1.5.19-1
++  atk-runtime-1.9.1-1
++  gtk2-x11-runtime-2.6.10-1
++  libgnome2-2.12.0.1-1
++  libgnomecanvas2-2.12.0-1
++  libgnomeui2-2.12.0-1
++
++Build requirements:
++(besides corresponding -devel packages)
++  cygwin-1.5.19-1
++  autoconf2.5-2.59-3
++  automake1.9-1.9.6-1
++  binutils-20050610-1
++  gawk-3.1.5-1
++  gcc-core-3.4.4-1
++  make-3.80-1
++  pkgconfig-0.17.2-2
++  sed-4.1.4-1
++
++Canonical website:
++  http://www.yorgalily.org/gamazons/
++
++Canonical download:
++  http://www.yorgalily.org/gamazons/src/
++
++-------------------------------------------
++
++Build instructions:
++  unpack gamazons-0.83-X-src.tar.bz2
++    if you use setup to install this src package, it will be
++	 unpacked under /usr/src automatically
++  cd /usr/src
++  ./gamazons-0.83-X.sh all
++
++This will create:
++  /usr/src/gamazons-0.83-X-src.tar.bz2
++  /usr/src/gamazons-0.83-X.tar.bz2
++
++-------------------------------------------
++
++Files included in the binary package:
++
++  /usr/bin/gamazons.exe
++  /usr/share/applications/gamazons.desktop
++  /usr/share/doc/Cygwin/gamazons-0.83.README
++  /usr/share/doc/gamazons-0.83/AUTHORS
++  /usr/share/doc/gamazons-0.83/ChangeLog
++  /usr/share/doc/gamazons-0.83/COPYING
++  /usr/share/doc/gamazons-0.83/INSTALL
++  /usr/share/doc/gamazons-0.83/NEWS
++  /usr/share/doc/gamazons-0.83/README
++  /usr/share/gamazons/aaron.theme
++  /usr/share/gamazons/aaron2.theme
++  /usr/share/gamazons/default.theme
++  /usr/share/gamazons/plain.theme
++  /usr/share/gnome/help/gamazons/C/gamazons.html
++  /usr/share/gnome/help/gamazons/C/topic.dat
++  /usr/share/pixmaps/gamazons/a_black.png
++  /usr/share/pixmaps/gamazons/a_black_square.png
++  /usr/share/pixmaps/gamazons/a_grey_square.png
++  /usr/share/pixmaps/gamazons/a_white.png
++  /usr/share/pixmaps/gamazons/a_white_square.png
++  /usr/share/pixmaps/gamazons/black.png
++  /usr/share/pixmaps/gamazons/black_square.png
++  /usr/share/pixmaps/gamazons/b_black.png
++  /usr/share/pixmaps/gamazons/b_black_square.png
++  /usr/share/pixmaps/gamazons/b_grey_square.png
++  /usr/share/pixmaps/gamazons/b_white.png
++  /usr/share/pixmaps/gamazons/b_white_square.png
++  /usr/share/pixmaps/gamazons/charcoal_square.png
++  /usr/share/pixmaps/gamazons/gnome-gamazons.png
++  /usr/share/pixmaps/gamazons/gold.png
++  /usr/share/pixmaps/gamazons/grey_square.png
++  /usr/share/pixmaps/gamazons/pearl.png
++  /usr/share/pixmaps/gamazons/purple.png
++  /usr/share/pixmaps/gamazons/purple2.png
++  /usr/share/pixmaps/gamazons/white.png
++  /usr/share/pixmaps/gamazons/white_square.png
++  /usr/share/pixmaps/gnome-gamazons.png
++
++------------------
++
++Port Notes:
++
++----- version 0.83-1 -----
++Initial release for Cygwin.
++
++
++Cygwin port maintained by:
++http://cygwinports.dotsrc.org/
+diff -urN -x .build -x .inst -x .sinst -x configure -x 'Makefile.in*' -x 'aclocal.m4*' -x ltmain.sh -x 'config.*' -x depcomp -x install-sh -x missing -x mkinstalldirs -x 'intltool*' -x autom4te.cache -x '*compile' -x '*stamp' -x '*html' -x '*sgml' -x '*tmpl' -x '*txt' -x '*xml' gamazons-0.83-orig/CYGWIN-PATCHES/setup.hint gamazons-0.83/CYGWIN-PATCHES/setup.hint
+--- gamazons-0.83-orig/CYGWIN-PATCHES/setup.hint	1969-12-31 18:00:00.000000000 -0600
++++ gamazons-0.83/CYGWIN-PATCHES/setup.hint	2006-01-17 16:56:51.177750000 -0600
+@@ -0,0 +1,16 @@
++category: Gnome Games
++requires: cygwin atk-runtime gtk2-x11-runtime libgnome2 libgnomecanvas2 libgnomeui2
++sdesc: "GNOME Amazons game"
++ldesc: "Amazons is a game played on a 10x10 chess board. Each side has four
++pieces (amazons) that move like chess queens (in a straight line in any
++direction). Instead of capturing pieces like in chess, the game is
++determined based on who moves last.
++
++Each move consists of two parts. First an amazon moves to a new square
++and then fires an arrow to another square (the arrow is fired in a
++straight line in any direction from the square the amazon landed on).
++The square the arrow lands on becomes a permenant block for the rest of
++the game. No one can move over it, or fire an arrow over it. Every turn
++an amazon must move and fire an arrow, so every turn there is one less
++square available on the board. Try and block in your opponent or section
++off a good chunk of the board for yourself."
