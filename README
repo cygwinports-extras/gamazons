@@ -15,24 +15,28 @@ square available on the board. Try and block in your opponent or section
 off a good chunk of the board for yourself. 
 
 Runtime requirements:
-  cygwin-1.5.19-1
-  atk-runtime-1.9.1-1
-  gtk2-x11-runtime-2.6.10-1
-  libgnome2-2.12.0.1-1
-  libgnomecanvas2-2.12.0-1
-  libgnomeui2-2.12.0-1
+  cygwin-1.5.25-15
+  libatk1.0_0-1.24.0-1
+  libgdk_pixbuf2.0_0-2.14.7-1
+  libglib2.0_0-2.18.4-1
+  libgnome2_0-2.24.1-1
+  libgnomecanvas2_0-2.20.1.1-2
+  libgnomeui2_0-2.24.0-1
+  libgtk2.0_0-2.14.7-1
+  libintl8-0.17-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.19-1
-  autoconf2.5-2.59-3
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  gawk-3.1.5-1
-  gcc-core-3.4.4-1
-  make-3.80-1
-  pkgconfig-0.17.2-2
-  sed-4.1.4-1
+  autoconf2.5-2.63-1
+  automake1.9-1.9.6-3
+  binutils-20080624-2
+  cygport-0.4.3-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  gnome-common-2.24.0-1
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
 
 Canonical website:
   http://www.yorgalily.org/gamazons/
@@ -47,7 +51,7 @@ Build instructions:
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  ./gamazons-0.83-X.sh all
+  cygport ./gamazons-0.83-X.cygport all
 
 This will create:
   /usr/src/gamazons-0.83-X-src.tar.bz2
@@ -59,7 +63,6 @@ Files included in the binary package:
 
   /usr/bin/gamazons.exe
   /usr/share/applications/gamazons.desktop
-  /usr/share/doc/Cygwin/gamazons-0.83.README
   /usr/share/doc/gamazons-0.83/AUTHORS
   /usr/share/doc/gamazons-0.83/ChangeLog
   /usr/share/doc/gamazons-0.83/COPYING
@@ -98,6 +101,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.83-2 -----
+Rebuilt with cygport.
 
 ----- version 0.83-1 -----
 Initial release for Cygwin.

@@ -1,0 +1,10 @@
+inherit gnome2
+
+DESCRIPTION="GNOME Amazons game"
+HOMEPAGE="http://www.yorgalily.org/gamazons/"
+SRC_URI="http://www.yorgalily.org/gamazons/src/${P}.tar.gz"
+
+CYGPORT_USE_UNSTABLE_API=1
+src_unpack_hook() {
+	make distclean
+}
