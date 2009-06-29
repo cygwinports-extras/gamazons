@@ -1,5 +1,5 @@
 category: Gnome Games
-requires: cygwin libatk1.0_0 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome2_0 libgnomecanvas2_0 libgnomeui2_0 libgtk2.0_0 libintl8
+requires: libatk1.0_0 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome2_0 libgnomecanvas2_0 libgnomeui2_0 libgtk2.0_0 libintl8
 sdesc: "GNOME Amazons game"
 ldesc: "Amazons is a game played on a 10x10 chess board. Each side has four
 pieces (amazons) that move like chess queens (in a straight line in any
