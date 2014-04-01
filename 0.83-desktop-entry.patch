@@ -1,0 +1,13 @@
+--- origsrc/gamazons-0.83/pixmaps/gamazons.desktop	2002-11-24 18:47:38.000000000 -0600
++++ src/gamazons-0.83/pixmaps/gamazons.desktop	2014-04-01 18:38:42.758954200 -0500
+@@ -29,9 +29,8 @@ Name[wa]=Gamazons
+ Name[zh_TW]=Gamazons
+ Comment=Gamazons game
+ Exec=gamazons
+-Icon=gnome-gamazons.png
++Icon=gnome-gamazons
+ Terminal=false
+ Type=Application
+ Categories=GNOME;Application;Game;BoardGame;
+ X-Desktop-File-Install-Version=0.3
+-OnlyShowIn=GNOME;

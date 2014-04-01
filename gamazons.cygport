@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="gamazons"
 VERSION=0.83
-RELEASE=10
+RELEASE=11
 CATEGORY="Games"
 SUMMARY="GNOME Amazons game"
 DESCRIPTION="Amazons is a game played on a 10x10 chess board. Each side has
@@ -11,6 +11,7 @@ direction). Instead of capturing pieces like in chess, the game is determined
 based on who moves last."
 HOMEPAGE="http://www.yorgalily.org/gamazons/"
 SRC_URI="${HOMEPAGE}/src/gamazons-${VERSION}.tar.gz"
+PATCH_URI="0.83-desktop-entry.patch"
 
 CYGPORT_USE_UNSTABLE_API=1
 src_unpack_hook() {
